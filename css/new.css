@@ -1,0 +1,192 @@
+*{
+	margin:0;
+	padding:0;
+}
+.content{
+	position:absolute;
+	/*top:-100%;*/
+}
+.page{
+	position:relative;
+	/*相对定位*/
+}
+img{
+	position:absolute;
+}
+.page1{
+	background:#00ccff;
+}
+/*用百分比设置图片宽高，在不同的移动端页面看上去就大致相同*/
+.page1-Building{
+	width: 100%;
+	height: 30%;
+	bottom: 0;
+	display:none;
+	
+}
+.page1-elements{
+	width: 100%;
+	height: 100%;
+	animation:zooming 2s linear infinite;
+}
+.page1-cloud{
+	width: 90%;
+	height: 90%;
+	animation:zooming 2s linear infinite;
+}
+/*放大缩小*/
+@keyframes zooming{
+	0%{transform:scale(1);}
+	50%{transform:scale(0.9);}
+	100%{transform:scale(1);}
+}
+.page1-flight{
+	left:0;
+	right: 0;
+	margin:auto;
+	top: 50%;
+	width: 0px;
+	animation:flight 4s linear infinite;
+}
+@keyframes flight{
+	0%{transform:scale(1);}
+	50%{transform:scale(1.2);}
+	100%{transform:scale(1);}
+}
+.page1-flower{
+	width: 20%;
+	top: 14%;
+	left: 7%;
+	/*层级关系*/
+	z-index:1;
+	animation: rotate 2s linear infinite;
+}
+.page1-flower2{
+	width: 23%;
+	top: 27%;
+	left: 63%;
+	/*层级关系*/
+	z-index:1;
+	animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+	0%{transform:rotate(0deg);}
+	25%{transform:rotate(30deg);}
+	50%{transform:rotate(0deg);}
+	75%{transform:rotate(-30deg);}
+	100%{transform:rotate(0deg);}
+	
+}
+.page1-stars{
+	width: 100%;
+}
+.page1-txt{
+	width: 60%;
+	left:0;
+	right: 0;
+	margin:auto;
+	top:15%;
+}
+
+.page2{
+	background:greenyellow;
+}
+.page2-bg{
+	width: 100%;
+	height: 100%;
+}
+.page2-farm{
+	width: 70%;
+	right:0;
+	top:20%;
+	display:none;
+}
+.page2-it{
+	width: 70%;
+	right:0;
+	top:60%;
+	/*将样式隐藏*/
+	display:none;
+}
+.page2-star{
+	width: 100%;
+	height: 100%;
+}
+.page3{
+	background:blue;
+}
+.page3-bg{
+	width: 100%;
+	height: 100%;
+}
+.page3-bus{
+	z-index: 3;
+	width: 65%;
+	bottom:10%;
+}
+.page3-busStation{
+	z-index: 1;
+	width: 100%;
+	bottom:0;
+}
+.page3-et{
+	
+}
+.page3-human{
+	z-index: 2;
+	width: 30%;
+	bottom: 12%;
+	right: 5%;
+}
+.page3-lt,.page3-et{
+	width: 40%;
+	display:none;
+}
+.page3-lt{
+	z-index: 4;
+	top:10%;
+}
+/*情景2*/
+.page3-human2{
+	z-index:1;
+	right: 17%;
+	top: 26%;
+	display:none;
+}
+.page3-wall{
+	right: 0;
+	bottom: 0;
+	height: 65%;
+	width: 30%;
+	display:none;
+}
+.page3-txt{
+	top: 23%;
+	width: 0;
+	left: 10%;
+	
+}
+.page3-where{
+	bottom: 5%;
+	left: 5%;
+	width: 0;
+	
+}
+
+.page4{
+	background:pink;
+}
+.page4-bg{
+	width: 100%;
+	height: 100%;
+}
+.page4-lightof{
+	z-index:1;
+	width: 30%;
+	bottom:0;
+	left:4%;
+}
+.page4-title{
+	right:0;
+	top:10%;
+}
